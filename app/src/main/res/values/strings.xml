@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DataBindingSample</string>
+    <string name="title_activity_simple_text_view">SimpleTextViewActivity</string>
+    <string name="title_activity_simple_list_view">SimpleListViewActivity</string>
+</resources>
