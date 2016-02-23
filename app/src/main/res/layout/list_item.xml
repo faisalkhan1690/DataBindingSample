@@ -2,8 +2,8 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
     <data>
         <import type="java.util.List"/>
-        <variable name="position" type="int"/>
-        <variable name="userList" type="List&lt;com.example.faisal.databindingsample.Model.User>"/>
+        <variable name="position" type="int"/><!--int type position -->
+        <variable name="userList" type="List&lt;com.example.faisal.databindingsample.Model.User>"/><!--user list User model type-->
     </data>
 
     <LinearLayout
@@ -13,13 +13,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{userList.get(position).firstName}" />
+            android:text="@{userList.get(position).firstName}" /><!--access data by object using index-->
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/activity_vertical_margin"
-            android:text="@{userList.get(position).lastName}" />
+            android:text="@{userList.get(position).lastName}" /><!--access data by object using index-->
 
     </LinearLayout>
 </layout>

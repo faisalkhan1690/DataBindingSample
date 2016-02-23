@@ -13,8 +13,13 @@ import com.example.faisal.databindingsample.databinding.ListItemBinding;
 import java.util.ArrayList;
 
 /**
- * Created by faisal khan on 12/13/2015.
+ * <h1><font color="green">SimpleTextViewActivity</font></h1>
+ *
+ * <p>In this activity we are using Data binding library and setting text Faisal Khan in the text TextView Lets See how</p>
+ * <p>First Data Binding library Will generate a Class file as per this layout name on which we are using ListItemBinding.class
+ * by using that class we will access this data over xml. For xml code please check list_item layout</p>--- Faisal
  */
+
 public class MyRecylerViewAdapter extends RecyclerView.Adapter<MyRecylerViewAdapter.MyViewHolder> {
 
     private final Context context;
@@ -35,6 +40,7 @@ public class MyRecylerViewAdapter extends RecyclerView.Adapter<MyRecylerViewAdap
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
+        //setting position in binding object
         holder.getBinding().setPosition(position);
     }
 
@@ -51,7 +57,11 @@ public class MyRecylerViewAdapter extends RecyclerView.Adapter<MyRecylerViewAdap
 
         public MyViewHolder(View itemView) {
             super(itemView);
+
+            //creating reference of databinding class
             listItemBinding = DataBindingUtil.bind(itemView);
+
+            //setting the list in initial because i will never change but you set data any where you want
             listItemBinding.setUserList(listData);
         }
         public ListItemBinding getBinding() {

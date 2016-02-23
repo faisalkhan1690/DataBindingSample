@@ -10,9 +10,17 @@ import com.example.faisal.databindingsample.Model.User;
 
 import java.util.ArrayList;
 
+
+/**
+ * <h1><font color="green">SimpleListViewActivity</font></h1>
+ *
+ * <p>How to use DataBinding library with RecyclerView for detail check out the MyRecylerViewAdapter.class</p>--- Faisal
+ */
+
+
 public class SimpleListViewActivity extends AppCompatActivity {
 
-    RecyclerView recyclerView;
+    private RecyclerView recyclerView;
     private ArrayList<User> listData;
 
     @Override
@@ -34,14 +42,6 @@ public class SimpleListViewActivity extends AppCompatActivity {
         listData.add(new User("Sandeep","Patel"));
 
         recyclerView.setAdapter(new MyRecylerViewAdapter(SimpleListViewActivity.this,listData));
-
-
-
-
-
-
-
-
     }
 
 }

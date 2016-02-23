@@ -2,6 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
     <data>
+        <!--accessing reference in which we have data-->
         <variable name="userdata" type="com.example.faisal.databindingsample.Model.User" />
     </data>
 
@@ -22,12 +23,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/activity_vertical_margin"
-            android:text="@{userdata.firstName}" />
+            android:text="@{userdata.firstName}" /><!--access data by object-->
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/activity_vertical_margin"
-            android:text="@{userdata.lastName}" />
+            android:text="@{userdata.lastName}" /><!--access data by object-->
     </LinearLayout>
 </layout>

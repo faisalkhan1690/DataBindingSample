@@ -1,7 +1,8 @@
 package com.example.faisal.databindingsample.Model;
 
 /**
- * Created by faisal khan on 12/13/2015.
+ * <h1><font color="green">User</font></h1>
+ * <p>It is Model class in we will set Data and fetch over the xml</p>---faisal
  */
 public class User {
 
